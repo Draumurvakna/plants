@@ -134,7 +134,7 @@ main { padding-block: 14px calc(120px + env(safe-area-inset-bottom, 0px)); }
 .timeline section { margin-bottom: 24px; }
 
 .empty { display: grid; gap: 18px; }
-.empty .lead { margin: 0; font: 19px/1.6 var(--font-hand); }
+.empty .lead { margin: 0; font: 19px/1.6 var(--font-hand); text-wrap: pretty; }
 .sample-tag { justify-self: start; display: inline-block; font-size: 12px; color: var(--ink-soft); border: 1px dashed var(--line); border-radius: 999px; padding: 1px 10px; }
 
 /* 台纸（卡片） */
@@ -619,8 +619,8 @@ function renderCollection() {
   }
   if (!entries.length) {
     html += `<div class="empty">
-      <p class="lead">路上看到一株好看的植物，点下面的「拍一株」。框住它，等它被认出来、画出来，就收进这里，按科归好。</p>
-      <span class="sample-tag">示例：收好之后，一张卡片长这样</span>
+      <p class="lead">在路上遇到了喜欢的植物？点击“拍一株”，框选合适的镜头范围，识别后，便会为它生成一幅手绘插画，收进草木集，变成一张薄薄的卡片。</p>
+      <span class="sample-tag">示例卡片</span>
       ${sampleCard()}
     </div>`;
     v.innerHTML = html;
