@@ -1,0 +1,17 @@
+{
+  "name": "草木集",
+  "short_name": "草木集",
+  "description": "随手拍的植物图鉴：拍照、辨认、手绘、按科归档",
+  "lang": "zh-CN",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#F1ECDD",
+  "theme_color": "#F1ECDD",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
